@@ -1,0 +1,93 @@
+.access-clipboard {
+  text-align: center;
+  margin-top: 9.375rem;
+
+  &__anywhere {
+    .anywhere-header {
+      p {
+        @include break-point-up(medium) {
+          width: 51vw;
+          max-width: 720px;
+          margin: 0 auto;
+          padding: 1rem 0 2.5rem;
+        }
+      }
+    }
+
+    .anywhere-img-container {
+      width: 350px;
+      margin: 0 auto;
+
+      @include break-point-up(x-large) {
+        width: 700px;
+        margin-top: 2rem;
+      }
+
+      img {
+        width: 100%;
+        object-fit: contain;
+      }
+    }
+  }
+
+  //workflow
+  &__workflow {
+    margin-bottom: 50px;
+    .workflow-flex-container {
+      margin-top: 5rem;
+
+      @include break-point-up(large) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .workflow-description {
+        width: 100%;
+        margin: 0 auto;
+        @include break-point-up(large) {
+          width: 350px;
+
+          p {
+            padding: 0 2rem;
+            line-height: 1.7;
+          }
+        }
+
+        img {
+          width: 40px;
+          object-fit: contain;
+        }
+      }
+    } //flex container end
+
+    //company logo
+    .logo-container {
+      margin-bottom: 3.9375rem;
+
+      .company-logo {
+        padding-bottom: 3.125rem;
+
+        @include break-point-up(medium) {
+          width: 90%;
+          margin: 0 auto;
+        }
+
+        img {
+          width: 117px;
+        }
+      }
+    }
+  } //workflow end
+
+  //iOs & Mac Os clipboard
+  .clipboard-iOs_Mac_Os {
+    p {
+      @include break-point-up(medium) {
+        width: 50vw;
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 0.1rem 0 2.5rem;
+      }
+    }
+  }
+}
